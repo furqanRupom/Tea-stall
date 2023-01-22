@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://kit.fontawesome.com/5683bafbfa.js" crossorigin="anonymous"></script>
 
     <title>Tea stall</title>
 </head>
 <body>
     
 
-    <header class=" container max-w-6xl mx-auto px-4 h-screen ">
-            <section class="flex flex-col justify-center md:flex-row md:justify-between items-center h-full">
+    <header class=" container max-w-6xl mx-auto px-4 ">
+
+        <nav class="flex justify-between items-center mx-auto py-16 px-4 lg:px-0 lg:py-8">
+            <div class="text-4xl text-red-500 font-bold mr-auto">
+                Tea <span class="text-transparent bg-gradient-to-l from-red-500 to-yellow-500 bg-clip-text font-bold">Stall</span>
+            </div>
+            <ul class=" space-x-5 items-center hidden md:flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>                
+                <li><a href="#">Contact</a></li>
+                <li class="bg-gradient-to-tr from-red-500 to-yellow-500 text-white px-4 py-2 rounded-lg shadow"><a href="#">order Now</a></li>
+            </ul>
+
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </div>
+        </nav>
+            <section class="flex flex-col justify-center md:flex-row md:justify-between items-center h-full my-20">
                 <div class="flex flex-col space-y-5">
                     <div>
                         <h1 class=" text-6xl md:text-5xl lg:text-6xl font-semibold max-w-md">It's good 
@@ -32,7 +53,7 @@
                 </div>
 
                 <div class="relative">
-                    <img class="" src="./images/banner.png" alt="">
+                    <img class="w-full" src="./images/banner.png" alt="">
                     
                     <div class="rounded-md absolute bottom-6 left-24 shadow px-3 py-1 text-slate-900 bg-white">
                         <div class="flex space-x-2 items-center">
@@ -93,15 +114,11 @@
 
 
 
-
-
-
-
         <section class="mt-32 mb-16">
-            <section class="grid grid-cols-1 lg:grid-cols-2 space-y-10 lg:space-x-10 lg:space-y-0">
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-10 lg:gap-y-0">
 
 
-                <div class="grid order-2 lg:order-1   grid-cols-2 gap-x-10">
+                <div class="grid order-2 lg:order-1  grid-cols-1 gap-x-10 gap-y-10 md:gap-y-0 md:grid-cols-2 ">
                     <div class="grid grid-cols-1 gap-y-10">
                         <div class=" h-28 bg-gradient-to-l from-yellow-50 to-red-50 rounded-lg">
 
@@ -225,6 +242,121 @@
                 </div>
             </section>
         </section>
+
+
+
+        <section class="my-16">
+
+            <section>
+                <div class="text-center py-12">
+                    <h1 class="font-bold text-4xl">News & Events</h1>
+                    <p class="leading-relaxed text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                </div>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 lg:gap-y-0 md:gap-x-10 p-10 justify-items-center lg:justify-items-start">
+                    <div class="ring ring-gray-50 rounded-lg  px-4 py-4">
+                        <img class="w-full" src="./images/news-1.png" alt="" class="rounded-none">
+                        <p class="text-gray-400 text-sm py-3">Aug 30,2002</p>
+                        <h1 class="font-bold text-xl">Collecting 8 points for discount</h1>
+                        <p class="text-gray-400 leading-relaxed font-sm">There are many variations of passages of Lorem Ipsum available.</p>
+                        <a href="" class="no-underline font-bold text-lg">see more</a>
+                    </div>
+                    <div class="ring ring-gray-50 rounded-lg  px-4 py-4">
+                        <img class="w-full" src="./images/news-2.png" alt="" class="rounded-none">
+                        <p class="text-gray-400 text-sm py-3">Aug 30,2002</p>
+                        <h1 class="font-bold text-xl">Collecting 8 points for discount</h1>
+                        <p class="text-gray-400 leading-relaxed font-sm">There are many variations of passages of Lorem Ipsum available.</p>
+                        <a href="" class="no-underline font-bold text-lg">see more</a>
+                    </div>
+                    <div class="ring ring-gray-50 rounded-lg  px-4 py-4">
+                        <img class="w-full" src="./images/news-3.png" alt="" class="rounded-none">
+                        <p class="text-gray-400 text-sm py-3">Aug 30,2002</p>
+                        <h1 class="font-bold text-xl">Collecting 8 points for discount</h1>
+                        <p class="text-gray-400 leading-relaxed font-sm">There are many variations of passages of Lorem Ipsum available.</p>
+                        <a href="" class="no-underline font-bold text-lg">see more</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
     </main>
+
+
+
+    <footer class=" bg-red-100 mt-16">
+
+        <section class="container max-w-6xl px-4 mx-auto">
+            <div class="flex  justify-between py-10">
+                <div>
+                    <img src="./images/cup.png" alt="">
+                </div>
+
+                <div class="flex space-x-5 items-center">
+                    <p class="text-gray-400">Ready to started?</p>
+                    <button class="px-3 py-3 text-white bg-gradient-to-tr from-yellow-500 to-red-500 rounded-lg">Get started</button>
+                </div>
+            </div>
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-5 xl:gap-y-0 py-10">
+                <div>
+                    
+                    <h1 class="font-bold">Quick Links</h1>
+                    <div class="flex flex-col">
+
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Insurence</a>
+                        <a href="#">privacy policy</a>
+                    </div>
+
+                </div>
+                <div>
+                    <h1 class="font-bold">Our Serivecs</h1>
+
+                    <div class="flex flex-col">
+
+                        <a href="">Life Insurance</a>
+                        <a href="">Car Insurance</a>
+                        <a href="">Health Insurance</a>
+                        <a href="">House Insurance</a>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="font-bold">Help</h1>
+                    <div class="flex flex-col">
+
+                        <a href="#">Faq</a>
+                        <a href="#">Contract Us</a>
+                       
+                    </div>
+                </div>
+                <div> 
+                    <h1 class="font-bold text-4xl">Subscribe to our newsletter</h1>
+
+                    <div class="pt-12 flex">
+
+                        <input class="foucs:outline-none outline-none bg-transparent border-b-2 border-black placeholder:text-black pb-2" type="email" name="" id="" placeholder="Email address">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 p-1 rounded-full text-white bg-gradient-to-tr from-yellow-500 to-red-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>
+                          
+
+                    </div>
+
+                    <div class="flex space-x-5 pt-6">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center py-5"> &copy;2027 UIDesign.to - All rights reserved.</p>
+        </section>
+
+    </footer>
 </body>
 </html>
